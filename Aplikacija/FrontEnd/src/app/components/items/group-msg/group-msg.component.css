@@ -1,0 +1,16 @@
+.message{
+    margin:10px 0 20px 10px;
+}
+
+.message h4{
+    padding-left:5px;
+    padding-top:3px;
+    color:#ff704d;
+    cursor: default;
+}
+
+.message h5{
+    padding-left: 5px;
+    color:white;
+    cursor: default;
+}

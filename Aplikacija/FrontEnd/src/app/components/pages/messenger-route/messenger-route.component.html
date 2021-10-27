@@ -1,0 +1,26 @@
+<div class="current-page-container">
+    <div class="chats">
+        <h2>Your chats</h2>
+        <app-chat-item *ngFor="let chat of this.messenger" [user]="chat" (clickEventHandler)="changeReceiverHandler($event)"></app-chat-item>
+    </div>
+    <div *ngIf="this.receiverU" class="utumsg">
+        <h3>You are talking to {{ receiverU.firstName }}</h3>
+        <div class="chatbox" #scrollframe>
+            <app-chat-msg *ngFor="let msg of this.chat" [chatMsg]="msg" [leftside]="msg.senderID==this.auth.currentUser.userId"></app-chat-msg>
+        </div>
+        <form novalidate #form="ngForm" (submit)="sendMessage(form)" >
+            <input 
+                name="msg"
+                type="text" 
+                class="messagebox"
+                placeholder="Send message" 
+                [(ngModel)] = "formData.message"
+                #name="ngModel"
+                autocomplete="off"
+                required maxlength="80"
+                >   
+            <button type="submit" class="sendbutton">Send</button> 
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,61 @@
+#welcome
+{
+    font-family: "Libre Baskerville";
+    font-size: 30px;
+    margin: auto;
+    padding: 10px 0px;
+    text-shadow: 0 1px 1px rgb(73, 64, 64);
+    text-align: center;
+    
+    color:rgb(0, 0, 0);
+   
+    border-color: dodgerblue;
+    border-style: double double double double;
+    border-width: 5px;
+  
+
+}
+img 
+{
+    width: 100%;
+}
+ul {
+    
+    counter-reset: index;  
+    padding: 0;
+    width: 60%;
+    margin: auto;
+
+  }
+
+li {
+    counter-increment: index;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+  }
+  li::before {
+    content: counters(index, ".", index);
+    font-size: 25px;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 30px;
+    font-variant-numeric: tabular-nums;
+    color: orangered;   
+  }
+  
+  h2
+  {
+      font-size: 30px;
+      padding: 20px;
+      color:orangered;
+      text-align: center;
+  }
+
+  #ispodListe
+  {
+      font-size: 20px;
+      text-align: center;
+      padding:20px 0;
+
+  }

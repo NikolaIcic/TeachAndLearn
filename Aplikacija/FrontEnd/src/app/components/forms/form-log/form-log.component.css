@@ -1,0 +1,32 @@
+.form-group
+{
+    margin: 0 0 0 10px;  
+}
+
+input
+{
+    border-radius: 5px;
+    border-style: outset;
+    height: 20px;
+}
+
+
+button.md-raised:not([disabled]) 
+{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.buttontest3{
+    padding: 10px 10px;
+    margin:10px 10px;
+    text-align: center;
+}
+
+.mylabel{
+    margin: 10px 10px 5px 10px;
+    color:rgb(253, 84, 5);
+    font-size: 20px;
+}

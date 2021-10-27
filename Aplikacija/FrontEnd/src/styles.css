@@ -1,0 +1,48 @@
+html,body,ul,li,header,footer,div,nav,p,h1,h2,h3,h4,h5,h6,main,article,aside,form,input,button{
+	margin: 0;
+	padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html{
+	background: #e6faff;
+}
+
+ul{
+	list-style: none;
+}
+
+a.active{
+	color: dodgerblue;
+}
+
+.left-container{
+    width:18vw;
+    height: 100vh;
+    float:left;
+}
+
+.right-container{
+    width:18vw;
+    height: 100vh;
+    float:left;
+}
+
+.middle-container{
+    width: 64vw;
+    height: 100vh;
+    float:left;
+}
+.title{
+    text-transform: uppercase;
+	font-size: 40px;
+	color: #ff704d;
+	line-height: 6vh;
+	text-align: left;
+}
+
+.current-page-container{
+    background: #ffffcc;
+    width: 100%;
+	max-height: fit-content;
+    min-height: 1200px;
+}

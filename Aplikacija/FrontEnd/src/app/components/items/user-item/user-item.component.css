@@ -1,0 +1,14 @@
+.user{
+    margin: 0px 5px;
+    padding: 3px 10px;
+    margin-left:50px;
+    padding-left: 20px;
+}
+
+.user h4{
+    
+    display: block;
+    color: #ff704d;
+    cursor: pointer;
+    width:fit-content;
+}

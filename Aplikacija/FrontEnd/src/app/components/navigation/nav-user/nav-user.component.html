@@ -1,0 +1,7 @@
+<div *ngIf="auth.loggedIn()" class="user" (click)="onClick()">
+    <fa-icon [icon]="faUserCircle" size="lg"></fa-icon>
+    <h4>
+        {{ auth.currentUser.firstName }} 
+    </h4>
+</div>
+

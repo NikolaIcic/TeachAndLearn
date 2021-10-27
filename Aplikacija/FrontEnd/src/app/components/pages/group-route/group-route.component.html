@@ -1,0 +1,37 @@
+<div class="current-page-container">
+    <div class="topdiv">
+        <div class="basicinfo">
+            <h2> {{ group.name }} </h2>
+            <h3>[{{ group.subject}}]</h3>
+            <h5> {{ group.description}} </h5>
+            <p *ngIf="!checkForUser()"> Join to see chat</p>
+            <div *ngIf="auth.loggedIn() && !checkForUser()" class="btntst3">
+                <button type="button" (click)="joinGroup()" class="btn btn-primary">Join Group</button>
+            </div>
+        </div>
+        <div class="members">
+            <h3>Members</h3>
+            <app-user-item *ngFor="let user of group.users" [user]="user"></app-user-item>
+        </div>
+    </div>
+    
+    
+    <div *ngIf="auth.loggedIn() && checkForUser()">
+        <div class="groupchat">
+            <app-group-msg *ngFor="let msg of this.group.groupChats" [msg]="msg"></app-group-msg>
+        </div>
+        <form novalidate #form="ngForm" (submit)="sendMessage(form)" >
+            <input 
+                name="msg"
+                type="text" 
+                class="messagebox"
+                placeholder="Send message" 
+                [(ngModel)] = "formData.message"
+                #name="ngModel"
+                autocomplete="off"
+                required maxlength="80"
+                >   
+            <button type="submit" class="sendbutton">Send</button> 
+        </form>
+    </div>
+</div>

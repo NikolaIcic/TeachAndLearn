@@ -1,0 +1,17 @@
+<ul>
+    <li><app-nav-item route="/home" text="Home"></app-nav-item></li>
+    <li><app-nav-item route="/groups" text="Groups"></app-nav-item></li>
+    <li><app-nav-item route="/users" text="Users"></app-nav-item></li>
+    <li><app-nav-item route="/about" text="About"></app-nav-item></li>
+    
+    <app-nav-login (loginEventHandler)="loginHandler()"></app-nav-login>
+    <app-nav-reg (regEventHandler)="registerHandler()"></app-nav-reg>
+    <app-nav-user></app-nav-user>
+    <app-nav-msg></app-nav-msg>
+    <app-nav-admin></app-nav-admin>
+    
+</ul>
+
+
+
+

@@ -1,0 +1,4 @@
+<div class="chatitem" (click)="onClick()">
+    <h4>{{this.user.firstName}} {{this.user.lastName}}</h4>
+    <p *ngIf="this.chat[this.chat.length-1]">{{this.chat[this.chat.length-1].message}}</p>
+</div>

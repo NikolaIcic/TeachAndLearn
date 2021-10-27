@@ -1,0 +1,38 @@
+h3{
+    margin-left:1%;
+    padding-top: 2%;
+    color: blue;
+}
+
+.users{
+    width: 100%;
+    overflow-y:scroll;
+    min-height: fit-content;
+    max-height: 60vh;
+}
+
+.groups{
+    width: 100%;
+    overflow-y:scroll;
+    min-height: fit-content;
+    max-height: 60vh;
+}
+
+.btntst3{
+  padding: 10px 10px;
+  margin:10px 10px;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+	background: #ffffcc;
+  }
+  ::-webkit-scrollbar-thumb {
+	background: #555; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+	background: #00bfff;
+  }

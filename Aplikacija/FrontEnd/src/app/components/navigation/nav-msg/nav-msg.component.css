@@ -1,0 +1,14 @@
+.msg-icon{
+    width:fit-content;
+	height: 5vh;
+	line-height: 5vh;
+    text-align: center;
+    color: white;
+	cursor: pointer;
+	margin-right: 10px;
+    float:right;
+}
+
+.msg-icon:hover{
+    color: red;
+}

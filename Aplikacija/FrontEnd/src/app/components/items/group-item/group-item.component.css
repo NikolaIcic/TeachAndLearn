@@ -1,0 +1,25 @@
+.group{
+    margin: 25px 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    background: white;
+    width: 95%;
+    border: 1px solid #ff704d;
+}
+
+.group h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#ff704d;
+    float:left;
+    font-size: 26px;
+    padding: 0 40px 0 10px;
+}
+
+.group h4{
+    display: block;
+    color: rgb(0, 195, 255);
+    
+}

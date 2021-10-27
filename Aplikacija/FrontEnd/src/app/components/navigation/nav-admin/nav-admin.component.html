@@ -1,0 +1,3 @@
+<div *ngIf="this.auth.loggedIn() && this.auth.currentUser.role=='Admin'" class="admin-icon" (click)="openAdmin()">
+    <fa-icon [icon]="faAddressCard" size="lg"></fa-icon>
+</div>

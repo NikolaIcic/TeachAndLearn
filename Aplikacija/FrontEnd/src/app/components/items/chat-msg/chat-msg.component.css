@@ -1,0 +1,21 @@
+.msgleft{
+    background-color: rgb(20, 22, 129);
+    border-radius: 25px;
+    width:96%;
+    text-align: left;
+    padding:2%;
+    margin:2%;
+    cursor: default;
+    word-wrap: break-word;
+}
+
+.msgright{
+    background-color: rgb(95, 20, 129);
+    border-radius: 25px;
+    width: 96%;
+    text-align: right;
+    padding:2%;
+    margin:2%;
+    cursor: default;
+    word-wrap: break-word;
+}

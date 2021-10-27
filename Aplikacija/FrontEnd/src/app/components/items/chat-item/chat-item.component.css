@@ -1,0 +1,21 @@
+.chatitem{
+    background-color: white;
+    width:96%;
+    height:10vh;
+    border: 1px solid #ff704d;
+    border-radius: 15px;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.chatitem h4{
+    color: #1d2adb;
+    text-align: center;
+    font-size: 18px;
+}
+.chatitem p{
+    overflow: hidden;
+    color: rgb(117, 114, 114);
+    padding-left:3%;
+}

@@ -1,0 +1,14 @@
+<div class="current-page-container">
+    <h3>Users:</h3>
+    <div class="users">
+        <app-user-item-a *ngFor="let u of this.users" [user]="u" (deleteEvent)="deleteHandlerUser($event)"></app-user-item-a>
+    </div>
+    <div class="btntst3">
+        <button class="btn btn-primary" type="button" (click)="insertUser()">Add user</button>
+    </div>
+
+    <h3>Groups:</h3>
+    <div class="groups">
+        <app-group-item-a *ngFor="let g of this.groups" [group]="g" (deleteEvent)="deleteHandlerGroup($event)"></app-group-item-a>
+    </div>
+</div>

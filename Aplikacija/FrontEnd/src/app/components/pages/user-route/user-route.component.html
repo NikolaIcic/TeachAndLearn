@@ -1,0 +1,9 @@
+<div class="current-page-container">
+    <div class="cnt"><label class="l2">{{ user.firstName }} {{ user.lastName }} </label></div>
+    <div class="cnt"><label class="l1">Description: </label><label class="l2">{{ user.description }}</label></div>
+    <div class="cnt"><label class="l1">Gen: </label><label class="l2">{{ user.gender }}</label></div>
+    <div class="cnt"><label class="l1">Role:</label><label class="l2">{{ user.role }}</label></div>
+    <div class="btntst3" *ngIf="this.auth.loggedIn()">
+        <button class="btn btn-primary" *ngIf="!(this.auth.currentUser.userId==user.userId)" type="button" (click)="openInMessenger()">Send message</button>
+    </div>
+</div>

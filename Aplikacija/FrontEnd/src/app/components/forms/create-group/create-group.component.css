@@ -1,0 +1,52 @@
+.btntst3{
+    padding: 10px 10px;
+    margin:10px 10px;
+    text-align: center;
+}
+
+.mylabel{
+    margin: 10px 10px 5px 10px;
+    color:rgb(253, 84, 5);
+    font-size: 18px;
+}
+
+.radiolable{
+    margin: 10px 10px 5px 10px;
+    color:rgb(34, 153, 221);
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form-radio{
+    margin-left:10px;
+    color:rgb(8, 195, 219)
+}
+
+input[type='radio']:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ff7300;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}  

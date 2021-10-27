@@ -1,0 +1,44 @@
+.user{
+    width:80%;
+    background-color: white;
+    border: 1px solid #ff704d;
+    margin:1% 10% 1% 10%;
+    height: fit-content;
+    
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width:100%;
+    height:5vh;
+}
+   
+ul li {
+    float: left;
+    width: 33%;
+	height: 5vh;
+	line-height: 5vh;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hh3{
+    color: #ff704d;
+    display: block;
+    cursor: pointer;
+}
+
+.hh4{
+    color: rgb(16, 140, 223);
+    display: block;
+    cursor:default;
+}
+
+.delete{
+    color : red;
+    float:right;
+    padding-right: 2%;
+    cursor: pointer;
+}

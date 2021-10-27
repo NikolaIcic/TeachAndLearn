@@ -1,0 +1,22 @@
+.btntst3{
+    margin: 2% 2%;
+    padding: 2% 2%;
+    text-align: center;
+    float:left;
+    width:10%
+}
+
+.btntst2{
+    padding-top: 5%;
+    text-align: center;
+}
+.cnt{
+    width: 85%;
+    float:left;
+}
+
+.formcnt{
+    width:100%;
+    height: 100px;
+}
+

@@ -1,0 +1,23 @@
+<div *ngIf="this.auth.loggedIn()" class="current-page-container">
+    <p>{{ user.firstName }} {{ user.lastName }} </p>
+    <p>Email: {{ user.email }}</p>
+    <p>Gen: {{ user.gender }}</p>
+    <p>Faculty: {{ user.faculty }}</p>
+    <p>Role: {{ user.role }}</p>
+    <p>Birth date: {{ user.dateOfBirth }}</p>
+    <form novalidate #form="ngForm" class="formcnt" (submit)="onSubmit(form)" >
+        <p>Description:</p>  
+        <textarea name="description" id="description"
+        class="form-control cnt" rows="3" 
+        #description="ngModel"
+        placeholder="Tell us something about yourself"
+        [(ngModel)]="formData"
+        required
+        maxlength="100"></textarea>
+        <button type="submit" class="btn btn-primary btntst3" [disabled]="form.invalid">Save</button>
+    </form>
+    <div class="btntst2">
+        <button type="button" class="btn btn-primary" (click)="logoutUser()">Logout</button>
+    </div>
+    
+</div>

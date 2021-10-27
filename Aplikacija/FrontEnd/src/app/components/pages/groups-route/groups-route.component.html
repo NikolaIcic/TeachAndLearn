@@ -1,0 +1,24 @@
+<div class="current-page-container">
+    
+        <div *ngIf="auth.loggedIn()" class="groupscontainer">
+                <h3>Your groups</h3>
+                <app-group-item *ngFor="let group of auth.myGroups" [group]="group"></app-group-item>
+               
+        </div>
+        
+
+        <div *ngIf="auth.loggedIn()" class="btntst3">
+                <button class="btn btn-primary" type="button" (click)="createGroup()">Create group</button>
+        </div>
+
+        <div class="searchgroups">
+                <h3>All groups:</h3>
+                
+                <div class="groupscontainer">
+                        <app-group-item *ngFor="let group of auth.groups" [group]="group"></app-group-item>
+                </div>
+        </div>
+        
+        
+
+</div>

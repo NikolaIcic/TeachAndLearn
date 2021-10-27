@@ -1,0 +1,174 @@
+<div class="current-page-container">
+    <form novalidate #form="ngForm" (submit)="onSubmit(form)">
+        <div class="form-group col-md-10">
+            <label class="mylabel" for="name">Name</label>
+            <input 
+                name="firstName"
+                id="name"
+                type="text" 
+                class="form-control form-control-lg"
+                placeholder="Enter name" 
+                #firstName="ngModel" 
+                [(ngModel)] = "formData.firstName"
+                required maxlength="30">
+            <div class="alert" *ngIf="firstName.invalid && firstName.touched">
+                *First name is required.*</div>
+        </div>
+
+        <div class="form-group col-md-10">
+            <label class="mylabel" for="surname">Surname</label>
+            <input name="lastName"
+                id="lastName" 
+                type="text" 
+                placeholder="Enter surname"
+                class="form-control form-control-lg"
+                #lastName="ngModel"
+                [(ngModel)] = "formData.lastName"
+                required maxlength="30" >
+        </div>
+
+        <div class="form-group col-md-10">
+            <label class="mylabel" for="email">E-mail</label>
+            <input 
+                email
+                name="emali" 
+                id="email"
+                type="email" 
+                class="form-control form-control-lg"
+                placeholder="Email" 
+                #email="ngModel" 
+                [(ngModel)] = "formData.email"
+                required maxlength="50">
+            <div class="alert" *ngIf="email.invalid && email.touched">
+                *Please enter a valid e-mail.*</div>
+        </div>
+
+        <div class="form-group col-md-10">
+            <label class="mylabel" for="password">Password</label>
+            <input 
+                name="password" 
+                id="password"
+                type="password" 
+                class="form-control form-control-lg"
+                required 
+                minlength="5"
+                maxlength="20"
+                #password="ngModel" 
+                [(ngModel)] = "formData.password"
+                placeholder="Enter password"  >
+            <div class="alert" *ngIf="password.invalid && password.touched">
+                *Password must be at least 5 caracters long.*</div>
+        </div>
+        <div class="form-group col-md-10">
+            <label class="mylabel" for="repeatedPassword">Repeat password</label>
+            <input 
+                ngModel 
+                name="repeatedPassword" 
+                type="password" 
+                class="form-control form-control-lg"
+                required 
+                minlength="5"
+                maxlength="20"
+                #repeatedPassword="ngModel" 
+                placeholder="Re-enter password"  >
+            <div class="alert" *ngIf="password.value !=repeatedPassword.value && repeatedPassword.touched">
+                *Passwords don't match*</div>
+        </div>
+
+        <div class="form-group col-md-10">
+            <label class="mylabel" for="faculty">Faculty</label>
+            <input 
+                name="faculty" 
+                id="faculty"
+                type="text" 
+                class="form-control form-control-lg"
+                #faculty="ngModel"
+                [(ngModel)] = "formData.faculty"
+                placeholder="Faculty(optional)" 
+                maxlength="60" >
+        </div>
+
+        <div class="form-group col-md-10">
+            <label class="mylabel" for="subject">Subject</label>
+            <input 
+                name="faculty" 
+                id="faculty"
+                type="text" 
+                class="form-control form-control-lg"
+                #subject="ngModel"
+                [(ngModel)] = "formData.subject"
+                placeholder="Subject for teacher(optional)" 
+                maxlength="20" >
+        </div>
+
+        <div class="form-group col-md-10">
+            <label class="mylabel" for="gender">Gender:</label>
+            <input 
+                name="gender"
+                id="genderMale"
+                type="radio" 
+                class="form-radio"  
+                #gender="ngModel"
+                [(ngModel)] = "formData.gender"
+                value="Male"
+                ><label class="radiolable" for="genderMale">Male</label>
+            <input 
+                name="gender" 
+                id="genderFemale"
+                type="radio" 
+                class="form-radio"  
+                #gender="ngModel"
+                [(ngModel)] = "formData.gender"
+                value="Female"
+                ><label class="radiolable" for="genderFemale">Female</label>
+        </div>
+
+        <div class="form-group col-md-10">
+            <label class="mylabel" for="role">Role:</label>
+            <input 
+                name="role"
+                id="role1"
+                type="radio" 
+                #role="ngModel"
+                [(ngModel)] = "formData.role"
+                value="Student"
+                ><label class="radiolable" for="role1">Student</label>
+            <input 
+                name="role" 
+                type="radio" 
+                id="role2"
+                #role="ngModel"
+                [(ngModel)] = "formData.role"
+                value="Teacher"
+                ><label class="radiolable" for="role2">Teacher</label>
+            <input 
+                name="role" 
+                type="radio" 
+                id="role3"
+                #role="ngModel"
+                [(ngModel)] = "formData.role"
+                value="Admin"
+                ><label class="radiolable" for="role2">Admin</label>
+        </div>
+
+        <div class="form-group col-md-10">
+            <label class="mylabel" for="dateOfBirth">Birthday</label>
+            <input 
+                name="dateOfBirth"
+                id="dateOfBirth"
+                type="text" 
+                class="form-control form-control-lg"
+                placeholder="DD/MM/YYYY" 
+                #dateOfBirth="ngModel" 
+                [(ngModel)] = "formData.dateOfBirth"
+                required minlength="8" maxlength="10"
+                 >
+            <div class="alert" *ngIf="firstName.invalid && firstName.touched">
+                *Birth date is required.*</div>
+        </div>
+        <div class="buttontest3">
+            <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid" >Add user</button>
+        </div>
+    </form>
+    
+</div>

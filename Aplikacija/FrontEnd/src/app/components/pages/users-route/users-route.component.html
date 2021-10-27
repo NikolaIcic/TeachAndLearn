@@ -1,0 +1,10 @@
+<div class="current-page-container">
+    <div class="students">
+        <h3>Students:</h3>
+        <app-user-item *ngFor="let s of students" [user]="s"></app-user-item>
+    </div>
+    <div class="teachers">
+        <h3>Teachers:</h3>
+        <app-user-item *ngFor="let t of teachers" [user]="t"></app-user-item>
+    </div>
+</div>

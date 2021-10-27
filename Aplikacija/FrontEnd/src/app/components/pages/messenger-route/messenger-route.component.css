@@ -1,0 +1,74 @@
+
+.chats{
+    width:20%;
+    min-height: fit-content;
+    max-height: 800px;
+    overflow-y: scroll;
+    float:left;
+    
+}
+.chats h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ff704d;
+}
+
+.utumsg{
+    width: 80%;
+    min-height: 400px;
+    max-height: fit-content;
+    float:left;
+    
+}
+.utumsg h3{
+    text-align: center;
+}
+
+.chatbox{
+    height: 60vh;
+    width: 92%;
+    margin:auto;
+    background: rgb(65, 63, 63);
+    overflow-y:scroll;
+    overflow-x: hidden;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    word-wrap: break-word;
+}
+
+.sendbutton{
+    float:left;
+    width: 28%;
+    height:5vh;
+    background-color: #00bfff;
+    color:white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.sendbutton:active{
+    background-color: cyan;
+}
+
+.messagebox{
+    width: 62%;
+    margin-left: 4%;
+    float:left;
+    height: 5vh;
+    margin-top: 5px;
+}
+
+
+::-webkit-scrollbar {
+	width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+	background: #ffffcc;
+  }
+  ::-webkit-scrollbar-thumb {
+	background: #555; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+	background: #00bfff;
+  }
